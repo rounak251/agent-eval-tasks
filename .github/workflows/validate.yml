@@ -1,0 +1,13 @@
+name: validate
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest==8.3.3 tzdata==2024.2
+      - run: python tools/validate_task.py tasks/*
+      - run: pytest -q tests

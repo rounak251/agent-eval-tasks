@@ -1,0 +1,7 @@
+sku,description,quantity,unit_price
+A-100,Annual licence,1,"1,200.50"
+B-220,Support hours,12,$85.00
+C-310,Onboarding,,"2,500.00"
+D-415,Seat add-on,7,$15.00
+R-001,Credit: duplicate charge,1,-85.00
+E-500,Training day,2,"1,150.00"

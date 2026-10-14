@@ -1,0 +1,13 @@
+version = "1.0"
+
+[metadata]
+difficulty = "medium"
+category = "debugging"
+tags = ["caching", "lru", "time"]
+expert_time_estimate_min = 30
+
+[verifier]
+timeout_sec = 120
+
+[agent]
+timeout_sec = 1800
