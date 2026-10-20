@@ -67,4 +67,11 @@ pytest -q tests                            # gate + flawed-task regression
 docker build -t feed tasks/feed-pagination-ties/environment   # agent environment
 ```
 
+## Limitations
+
+- Four tasks is a small set. It shows the method, not a benchmark you could rank agents with.
+- All four bugs are single-repository Python logic bugs. There are no multi-service, front-end or performance tasks yet.
+- The gate checks structure and runs the oracle and no-op. It cannot prove a verifier has no loophole. That still needs a human reviewer trying to break it.
+- The tasks have not yet been run against a range of real coding agents to measure how hard they are.
+
 MIT licensed.
